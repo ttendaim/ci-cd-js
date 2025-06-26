@@ -1,0 +1,55 @@
+name: continous intergration workflow
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'web/**'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'web/**'
+
+jobs:
+
+  test:
+    name: 'Run unit test'
+    defualts:
+      run: 
+        shell: bash
+        # Define the working directory for all run steps in the workflow
+        working-directory: .web/
+      # OS we want the workflow to run on
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v2
+
+      - name: 'install-dependency' 
+        run: npm install
+
+      - name: 'Run test'
+        run: npm run test
+
+  lint:
+    name: 'Run linting test'
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./web
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v2
+
+      - name: 'Install Dependencies'
+        run: npm install
+      
+      - name: 'Run Linter'
+        run: npx standard -v
+
+
