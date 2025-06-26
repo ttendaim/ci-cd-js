@@ -1,4 +1,4 @@
-# Code owners are automatically requested for review when someone opens 
+# Code owners are automatically requested for review when someone opens  
 # a pull request that modifies code that they own.
 # 
 # Read more about it here: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
