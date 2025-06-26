@@ -25,14 +25,14 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-      - name: 'Checkout repository'
-        uses: actions/checkout@v4
+        - name: 'Checkout repository'
+          uses: actions/checkout@v4
 
-      - name: 'install-dependency' 
-        run: npm install
+        - name: 'install-dependency' 
+          run: npm install
 
-      - name: 'Run test'
-        run: npm run test
+        - name: 'Run test'
+          run: npm run test
 
   lint:
     name: 'Run linting test'
@@ -43,13 +43,13 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-      - name: 'Checkout repository'
-        uses: actions/checkout@v4
+        - name: 'Checkout repository'
+          uses: actions/checkout@v4
 
-      - name: 'Install Dependencies'
-        run: npm install
+        - name: 'Install Dependencies'
+          run: npm install
       
-      - name: 'Run Linter'
-        run: npx standard -v
+        - name: 'Run Linter'
+          run: npx standard -v
 
 
