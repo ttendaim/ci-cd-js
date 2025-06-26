@@ -8,7 +8,7 @@ Setup is as simple as:
 
 ```bash
 npm install
-# Run unit tests
+# Run unit tests 
 npm run test
 # Run the app
 npm run start
