@@ -2,18 +2,9 @@
 
 > TLDR; This repository is a sample project demonstrating a basic continuous integration (CI) / continuous deployment (CD) setup. This project is in READ ONLY mode.
 
-:warning: **Fork this repository in order to use it!** If you're following along the videos and trying to run the workflows here, they will not work.
-
-### Course attachement
-
-> This repository is best consumed while or after following the course attachment 👇
-
-<a href="https://www.youtube.com/playlist?list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY" target="_blank"><img src="./images/course_banner.png" /></a>
-
 ## Project structure
 
 ```sh
-# You can generate this tree with:
 # $ tree -a -I '.git|assets|.github|venv|node_modules|images|.DS_Store|*.tfvars|.terraform'
 .
 ├── .gitignore
